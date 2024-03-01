@@ -13,28 +13,11 @@ img  = Image.open("completion.png")
 resize_image = img.resize((600, 500))
 photo=ImageTk.PhotoImage(resize_image)
 lab=Label(image=photo) .pack()   #.place(x=50,y=50)
-# 
-\
-
-
-    #gx.mainloop
+#
 
 
 
-#def nvidia_scan():
-   # sr = txt.get()
-   # gx = Tk()
-   # print()
-   # gx.geometry("600x500")
- #   gx.resizable(width=False, height=False)
- #   gx.configure(bg='black')
- #   Label(gx,text="[ * ] Nvidia system proputy = ") .place(x=100)
- #   #Label(gx,text=sr) .place(x=250)
-  #  Button(gx,text="Nvidia 340xx") .place(x=100,y=100)
-  #  Button(gx,text="Nvidia 390xx") .place(x=100,y=130)
- #   Button(gx,text="Nvidia 470xx") .place(x=100,y=160)
-  #  Button(gx,text="Nvidia 525xx") .place(x=100,y=190)
-   # Button(gx,text="Nvidia 535xx") .place(x=100,y=220)
+
 
 def show():
     r = brave.get()
@@ -65,8 +48,7 @@ def show():
 
 
 brave = IntVar()
-#txt = StringVar()
-#Entry(root,textvariable=txt) .place(x=200,y=300)
+
 
 Radiobutton(text="340xx",variable=brave,value=1,command=show) .place(x=70,y=300)
 Radiobutton(text="390xx",variable=brave,value=2,command=show) .place(x=70,y=330)
