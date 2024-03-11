@@ -3,25 +3,39 @@ from PIL import Image, ImageTk
 import os
 # config 
 root = Tk()
+
 # size windows
 root.geometry("600x500")
-#
+
+# title
 root.title("Nvidia Installler")
+
+# size not resize windows
 root.resizable(width=False, height=False)
+
+# background color = black
 root.configure(bg='black')
 
-#
+
 # imge gorup
+
+# opne files img 
 img  = Image.open("completion.png") 
+
+# resize img to 600x500
 resize_image = img.resize((600, 500))
+
+#  ....
 photo=ImageTk.PhotoImage(resize_image)
+
+# show img in programe
 lab=Label(image=photo) .pack()   # center 
-#
 
 
 
 
 
+# funtion choice install nvidia
 def show():
     r = brave.get()
     if r == 1:
@@ -49,7 +63,7 @@ def show():
         exit()
     
 
-
+# brave = number 1-5
 brave = IntVar()
 
 
