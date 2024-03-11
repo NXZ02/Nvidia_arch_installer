@@ -3,16 +3,19 @@ from PIL import Image, ImageTk
 import os
 # config 
 root = Tk()
+# size windows
 root.geometry("600x500")
+#
 root.title("Nvidia Installler")
 root.resizable(width=False, height=False)
 root.configure(bg='black')
+
 #
 # imge gorup
 img  = Image.open("completion.png") 
 resize_image = img.resize((600, 500))
 photo=ImageTk.PhotoImage(resize_image)
-lab=Label(image=photo) .pack()   #.place(x=50,y=50)
+lab=Label(image=photo) .pack()   # center 
 #
 
 
