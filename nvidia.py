@@ -10,7 +10,7 @@ root.geometry("600x500")
 # title
 root.title("Nvidia Installler")
 
-# size not resize windows
+#  not resize windows
 root.resizable(width=False, height=False)
 
 # background color = black
