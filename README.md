@@ -1,6 +1,6 @@
 install nvidia driver in arch linux for basic 
 
-for 
+for nvidia 340xx 390xx 470xx 525xx 535xx
 
 chmod +x setup.sh
 
