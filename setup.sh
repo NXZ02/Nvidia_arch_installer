@@ -8,9 +8,10 @@ arch_yay() {
     makepkg -si  --noconfirm
 fi
 }
-
+sudo pacman -S python-pip --noconfirm
 sudo pacman -S --noconfirm tk python-pillow
 pip3 install pillow --break-system-packages
+arch_yay
 clear
 echo " Run as  python3 nvidia.py"
 echo
