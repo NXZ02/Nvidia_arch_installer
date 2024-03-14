@@ -1,9 +1,12 @@
 from tkinter import *
 from PIL import Image, ImageTk
 import os
+import tkinter.messagebox
 # config 
 root = Tk()
 
+def install_pass():
+    tkinter.messagebox.showinfo("NVIDIA ","install done reboot you computer ")
 # size windows
 root.geometry("600x500")
 
@@ -42,23 +45,28 @@ def show():
         os.system("sudo pacman -S base-devel linux-headers git nano --needed --noconfirm")
         os.system("yay -S nvidia-340xx-dkms nvidia-340xx-utils lib32-nvidia-340xx-utils nvidia-settings --noconfirm")
         os.system("clear;echo reboot you computer;echo ")
+        install_pass()
     elif r == 2:
         os.system("sudo pacman -S base-devel linux-headers git nano --needed --noconfirm")
         os.system("yay -S nvidia-390xx-dkms nvidia-390xx-utils lib32-nvidia-390xx-utils nvidia-settings --noconfirm")
         os.system("clear;echo reboot you computer;echo ")
+        install_pass()
         
     elif r == 3:
         os.system("sudo pacman -S base-devel linux-headers git nano --needed --noconfirm")
         os.system("yay -S nvidia-470xx-dkms nvidia-470xx-utils lib32-nvidia-470xx-utils nvidia-settings --noconfirm")
         os.system("clear;echo reboot you computer;echo ")
+        install_pass()
     elif r == 4:
         os.system("sudo pacman -S base-devel linux-headers git nano --needed --noconfirm")
         os.system("yay -S nvidia-525xx-dkms nvidia-525xx-utils lib32-nvidia-525xx-utils nvidia-settings --noconfirm")
         os.system("clear;echo reboot you computer;echo ")
+        install_pass()
     elif r == 5:
         os.system("sudo pacman -S base-devel linux-headers git nano --needed --noconfirm")
         os.system("yay -S nvidia-535xx-dkms nvidia-535xx-utils lib32-nvidia-535xx-utils nvidia-settings --noconfirm")
         os.system("clear;echo reboot you computer;echo ")
+        install_pass()
     else:
         exit()
     
